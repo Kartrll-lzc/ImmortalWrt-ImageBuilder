@@ -45,7 +45,7 @@ wan_ifname=""
 lan_ifnames=""
 # 此处特殊处理个别开发板网口顺序问题
 case "$board_name" in
-    "radxa,e20c"|"friendlyarm,nanopi-r5c")
+    "radxa,e20c"|"friendlyarm,nanopi-r5c"|"friendlyarm,nanopi-r76s")
         wan_ifname="eth1"
         lan_ifnames="eth0"
         echo "Using $board_name mapping: WAN=$wan_ifname LAN=$lan_ifnames" >>"$LOGFILE"
